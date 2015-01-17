@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: WebApp
+Bundle-SymbolicName: org.apodhrad.example.osgi.webapp
+Bundle-Version: 1.0.0.qualifier
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Import-Package: org.osgi.framework;version="1.4.0"
+Web-ContextPath: /webapp
+Bundle-Activator: org.apodhrad.example.osgi.webapp.Activator
+Bundle-ClassPath: .,WEB-INF/classes
