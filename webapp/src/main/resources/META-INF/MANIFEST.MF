@@ -4,7 +4,11 @@ Bundle-Name: WebApp
 Bundle-SymbolicName: org.apodhrad.example.osgi.webapp
 Bundle-Version: 1.0.0.qualifier
 Bundle-RequiredExecutionEnvironment: JavaSE-1.7
-Import-Package: org.osgi.framework;version="1.4.0"
+Import-Package: javax.inject,
+ javax.servlet;version="2.6.0",
+ javax.servlet.http;version="2.6.0",
+ org.osgi.framework;version="1.4.0"
 Web-ContextPath: /webapp
 Bundle-Activator: org.apodhrad.example.osgi.webapp.Activator
 Bundle-ClassPath: .,WEB-INF/classes
+Export-Package: org.apodhrad.example.osgi.webapp
