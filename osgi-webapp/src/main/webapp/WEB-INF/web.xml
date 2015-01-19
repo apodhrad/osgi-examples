@@ -5,11 +5,25 @@
   <servlet-name>MyServlet</servlet-name>
   <servlet-class>org.apodhrad.example.osgi.MyServlet</servlet-class>
  </servlet>
+ <servlet>
+  <servlet-name>Info</servlet-name>
+  <servlet-class>org.apodhrad.example.osgi.Info</servlet-class>
+ </servlet>
  <servlet-mapping>
   <servlet-name>MyServlet</servlet-name>
   <url-pattern>/MyServlet</url-pattern>
  </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>Info</servlet-name>
+  <url-pattern>/Info</url-pattern>
+ </servlet-mapping>
  <welcome-file-list>
   <welcome-file>index.jsp</welcome-file>
  </welcome-file-list>
+ <login-config>
+  <auth-method>FORM</auth-method>
+  <form-login-config>
+   <form-login-page>/login.jsp</form-login-page>
+  </form-login-config>
+ </login-config>
 </web-app>
