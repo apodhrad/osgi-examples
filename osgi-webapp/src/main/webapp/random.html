@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#coolbtn").click(function(){
+    $.get("HelloServlet",function(responseText){
+    	$('#cooltxt').text(responseText);
+    });
+  });
+});
+</script>
+</head>
+<body>
+
+<span id="cooltxt">Get random number</span>
+<button id="coolbtn">Click</button>
+
+</body>
+</html>
