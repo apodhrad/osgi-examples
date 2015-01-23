@@ -49,6 +49,12 @@
 			<version>3.0.2</version>
 			<scope>provided</scope>
 		</dependency>
+		<dependency>
+			<groupId>org.freemarker</groupId>
+			<artifactId>freemarker</artifactId>
+			<version>2.3.21</version>
+			<scope>provided</scope>
+		</dependency>
 	</dependencies>
 
 	<build>
@@ -97,7 +103,7 @@
 						<Bundle-Activator>org.apodhrad.example.osgi.Activator</Bundle-Activator>
 						<Bundle-ManifestVersion>2</Bundle-ManifestVersion>
 						<Bundle-ClassPath>.,WEB-INF/classes</Bundle-ClassPath>
-						<Web-ContextPath>/hello</Web-ContextPath>
+						<Web-ContextPath>/</Web-ContextPath>
 						<Export-Package>
 							org.apodhrad.example.osgi*;version=${project.version}
 						</Export-Package>
